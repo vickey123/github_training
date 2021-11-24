@@ -1,0 +1,16 @@
+---
+ - hosts: localhost
+   vars:
+    - ansible_python_interpreter: /usr/local/bin/python
+   tasks:
+     - name: provision an ec2 instance
+       ec2:
+         key_name: baselinekey
+         instance_type: t2.micro
+         image: ami-00dfe2c7ce89a450b 
+         region: us-east-2
+         wait: yes
+         count: 1
+         vpc_subnet_id: subnet-ec98caa0
+         assign_public_ip: yes
+       register: ec2_facts
