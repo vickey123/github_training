@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Whoami
+      shell: echo "This is so much fun"
+      register: output
+      
+    - name: Debug statement
+      debug:
+        msg: "{{ output }}"
