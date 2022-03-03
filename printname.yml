@@ -1,6 +1,14 @@
 ---
 - hosts: localhost
+  vars_file:
+    - vars.yml
   tasks:
+    - name: Create an ec2 instance
+      ec2:
+        instance_type: t2.micro
+        aws_access_key: "{{ AccessKey }}"
+        aws_secret_key: "{{ SecretKey }}"
+
     - name: Whoami
       shell: echo "This is so much fun"
       register: output
