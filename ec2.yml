@@ -20,3 +20,6 @@
        
     - name: install python
       shell: sudo yum install python-pip
+      
+    - name: install git
+      shell: suo
