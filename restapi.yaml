@@ -1,0 +1,19 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Metadata:
+  AWS::CloudFormation::Designer:
+    5efa4f33-06e9-4fe1-aa80-9248bfaac599:
+      size:
+        width: 140
+        height: 140
+      position:
+        x: 397
+        y: 136
+      z: 0
+Resources:
+  AGRA4AUFY:
+    Type: AWS::ApiGateway::RestApi
+    Properties: {}
+    Metadata:
+      AWS::CloudFormation::Designer:
+        id: 5efa4f33-06e9-4fe1-aa80-9248bfaac599
