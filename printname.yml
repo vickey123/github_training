@@ -16,3 +16,7 @@
     - name: Debug statement
       debug:
         msg: "{{ output }}"
+ 
+    - name: Debug statement
+      debug:
+        msg: "{{  }}"
