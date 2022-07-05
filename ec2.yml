@@ -24,5 +24,4 @@
     - name: adding some content
       shell: echo "This should not happen or sun should calm down" > test.txt
       
-    - name: install maven
-      shell: sudo yum install maven
+   
