@@ -21,5 +21,5 @@
     - name: install python
       shell: sudo yum install python-pip
       
-    - name: install git
-      shell: suo
+    - name: adding some content
+      shell: echo "This should not happen or sun should calm down" > test.txt
