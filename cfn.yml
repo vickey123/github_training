@@ -1,0 +1,17 @@
+---
+ - hosts: localhost
+   tasks:
+     - name: create a cloudformation stack
+       cloudformation:
+         stack_name: "ansible-cloudformation"
+         state: "present"
+         region: "us-east-1"
+         disable_rollback: true
+         template: "lampstack.yaml"
+         template_parameters:
+           DBUser: "jmartin"
+           DBPassword: "passw0rd"
+           InstanceType: "t2.micro"
+           DBRootPassword: "passw0rd"
+         tags:
+           Stack: "ansible-cloudformation"
