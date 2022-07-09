@@ -1,0 +1,11 @@
+---
+ - hosts: localhost
+   tasks:
+     - name: create a cloudformation stack
+       cloudformation:
+         stack_name: "ansible-cloudformation"
+         state: "absent"
+         region: "us-east-1"
+         aws_access_key: AKIA32WSC3XITC6ZLOV2
+         aws_secret_key: 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
+       register: cfn_output
