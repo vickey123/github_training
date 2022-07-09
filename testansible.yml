@@ -4,3 +4,7 @@
     - name: Print something to test
       shell: echo "this is fun"
       register: output
+
+    - name: Print another stoty
+      shell: echo "this is saturday"
+      register: outputtwo
