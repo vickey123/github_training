@@ -15,3 +15,4 @@
            DBRootPassword: "passw0rd"
          tags:
            Stack: "ansible-cloudformation"
+       register: cfn_output
