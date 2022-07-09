@@ -7,8 +7,8 @@
          state: "present"
          region: "us-east-1"
          disable_rollback: true
-         aws_access_key: AKIA32WSC3XITC6ZLOV2
-         aws_secret_key: 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
+         aws_access_key: xxxxxxxxxxxxxxxx
+         aws_secret_key: xxxxxxxxxxxxxxxx
          template: "lampstack.yaml"
          template_parameters:
            DBUser: "jmartin"
