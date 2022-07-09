@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Print something to test
+      shell: echo "this is fun"
+      register: output
