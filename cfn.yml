@@ -2,7 +2,7 @@
  - name: create a cloudformation
    hosts: localhost
    tasks:
-     - name: create a cloudformation stack
+     - name: this script will deploy a cloudformation stack
        cloudformation:
          stack_name: "ansible-cloudformation"
          state: "present"
