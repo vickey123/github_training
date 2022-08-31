@@ -13,10 +13,3 @@
       shell: echo "This is so much fun"
       register: output
       
-    - name: Debug statement
-      debug:
-        msg: "{{ output }}"
- 
-    - name: Debug statement
-      debug:
-        msg: "{{  }}"
