@@ -1,0 +1,6 @@
+---
+ - hosts: localhost
+   tasks:
+     - name: Print something
+       shell: echo "This is so much fun"
+       register: out_put
