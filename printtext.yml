@@ -2,5 +2,5 @@
  - hosts: localhost
    tasks:
      - name: Print something
-       shell: echo "This is so much fun"
+       shell: echo "This is so much fun" && echo "lets jump in"
        register: out_put
