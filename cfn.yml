@@ -1,5 +1,6 @@
 ---
- - hosts: localhost
+ - name: create a cloudformation
+   hosts: localhost
    tasks:
      - name: create a cloudformation stack
        cloudformation:
